@@ -1,0 +1,21 @@
+{
+    "path": [
+        {        
+            "value" : "$LibPath/houflipbook",
+            "method" : "prepend",
+        },
+    ],
+    "env": [
+        {
+            "houflipbookLib": "$LibPath/houflipbook",
+        },
+        {
+            "HOUDINI_OTLSCAN_PATH": {
+                "method": "append", 
+                "value": [
+                    "$houflipbookLib/otls",
+                ]
+            }
+        },
+    ],
+}
